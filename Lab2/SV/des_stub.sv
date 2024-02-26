@@ -30,7 +30,7 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
 
 	logic [27:0] C0,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16;
 	logic [27:0] D0,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16;
-
+//in binary 
    PC1 first(.key(Key),.left_block(C0),.right_block(D0));
    assign C1[27:0]={C0[26:0],C0[27]};
    assign D1[27:0]={D0[26:0],D0[27]};
@@ -43,6 +43,74 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    assign C3[27:0]={C2[25:0],C2[27:26]};
    assign D3[27:0]={D2[25:0],D2[27:26]};
    PC2 key3(C3,D3,SubKey3);
+//	second
+
+   assign C4[27:0]={C3[25:0],C3[27:26]};
+   assign D4[27:0]={D3[25:0],D3[27:26]};
+   PC2 key4(C4,D4,SubKey4);
+
+   assign C5[27:0]={C4[25:0],C4[27:26]};
+   assign D5[27:0]={D4[25:0],D4[27:26]};
+   PC2 key5(C5,D5,SubKey5);
+
+   assign C6[27:0]={C5[25:0],C5[27:26]};
+   assign D6[27:0]={D5[25:0],D5[27:26]};
+   PC2 key6(C6,D6,SubKey6);
+
+//	third one 8 - 12
+
+   assign C7[27:0]={C6[25:0],C6[27:26]};
+   assign D7[27:0]={D6[25:0],D6[27:26]};
+   PC2 key7(C7,D7,SubKey7);
+
+   assign C8[27:0]= {C7[25:0],C7[27:26]};
+   assign D8[27:0]= {D7[25:0],D7[27:26]};
+   PC2 key5(C5,D5,SubKey8);
+
+   assign C9[27:0]= {C5[26:0],C5[27]};
+   assign D9[27:0]= {D5[26:0],D5[27]};
+   PC2 key9(C9,D9,SubKey9);
+
+//	fourth one 
+
+   assign C10[27:0]={C9[25:0],C9[27:26]};
+   assign D10[27:0]={D9[25:0],D9[27:26]};
+   PC2 key10(C10,D10,SubKey10);
+
+   assign C11[27:0]={C10[25:0],C10[27:26]};
+   assign D11[27:0]={D10[25:0],D10[27:26]};
+   PC2 key11(C11,D11,SubKey11);
+
+   assign C12[27:0]={C13[25:0],C13[27:26]};
+   assign D12[27:0]={D13[25:0],D13[27:26]};
+   PC2 key12(C12,D12,SubKey12);
+
+// fith one
+
+   assign C13[27:0]={C12[25:0],C12[27:26]};
+   assign D13[27:0]={D12[25:0],D12[27:26]};
+   PC2 key13(C13,D13,SubKey13);
+
+   assign C14[27:0]={C13[25:0],C13[27:26]};
+   assign D14[27:0]={D13[25:0],D13[27:26]};
+   PC2 key14(C14,D14,SubKey14);
+
+   assign C15[27:0]={C14[25:0],C14[27:26]};
+   assign D15[27:0]={D14[25:0],D14[27:26]};
+   PC2 key15(C15,D15,SubKey15);
+
+   assign C16[27:0]={C15[26:0],C15[27]};
+   assign D16[27:0]={D15[26:0],D15[27]};
+   PC2 key16(C16,D16,SubKey16);
+
+ 
+
+
+
+
+
+
+
 
 endmodule // GenerateKeys
 
@@ -1035,5 +1103,5 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
 
    // Final Permutation (IP^{-1}) (swap output of round16)
    FP FP({r16_out[31:0], r16_out[63:32]}, ciphertext);
-   //tes test test again
+   //
 endmodule // DES
