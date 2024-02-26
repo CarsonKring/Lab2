@@ -222,15 +222,18 @@ module IP (inp_block, out_block);
    assign out_block[58] = inp_block[64-18];
    assign out_block[57] = inp_block[64-10];
    assign out_block[56] = inp_block[64-2];
+
    assign out_block[55] = inp_block[64-60];
    assign out_block[54] = inp_block[64-52];   
    assign out_block[53] = inp_block[64-44];   
    assign out_block[52] = inp_block[64-36];
    assign out_block[51] = inp_block[64-28];
+   
    assign out_block[50] = inp_block[64-20];
    assign out_block[49] = inp_block[64-12];
    assign out_block[48] = inp_block[64-4];
    assign out_block[47] = inp_block[64-62];
+   
    assign out_block[46] = inp_block[64-54];
    assign out_block[45] = inp_block[64-46];
    assign out_block[44] = inp_block[64-38];   
