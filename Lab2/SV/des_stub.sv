@@ -65,11 +65,17 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
 
    assign C8[27:0]= {C7[25:0],C7[27:26]};
    assign D8[27:0]= {D7[25:0],D7[27:26]};
-   PC2 key5(C5,D5,SubKey8);
+   PC2 key8(C8,D8,SubKey8);
 
-   assign C9[27:0]= {C5[26:0],C5[27]};
-   assign D9[27:0]= {D5[26:0],D5[27]};
+
+//Work here
+
+
+   assign C9[27:0]= {C8[26:0],C8[27]};
+   assign D9[27:0]= {D8[26:0],D8[27]};
    PC2 key9(C9,D9,SubKey9);
+
+
 
 //	fourth one 
 
@@ -81,8 +87,8 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    assign D11[27:0]={D10[25:0],D10[27:26]};
    PC2 key11(C11,D11,SubKey11);
 
-   assign C12[27:0]={C13[25:0],C13[27:26]};
-   assign D12[27:0]={D13[25:0],D13[27:26]};
+   assign C12[27:0]={C11[25:0],C11[27:26]};
+   assign D12[27:0]={D11[25:0],D11[27:26]};
    PC2 key12(C12,D12,SubKey12);
 
 // fith one

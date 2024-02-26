@@ -13,7 +13,7 @@
 # //
 # do des.do
 # Model Technology ModelSim SE-64 vlog 10.7f Compiler 2020.03 Mar 24 2020
-# Start time: 13:42:41 on Feb 26,2024
+# Start time: 13:51:52 on Feb 26,2024
 # vlog -reportprogress 300 des_stub.sv tb_des.sv 
 # -- Compiling module GenerateKeys
 # -- Compiling module PC1
@@ -37,10 +37,10 @@
 # 
 # Top level modules:
 # 	stimulus
-# End time: 13:42:41 on Feb 26,2024, Elapsed time: 0:00:00
+# End time: 13:51:52 on Feb 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 13:42:42 on Feb 26,2024
+# Start time: 13:51:52 on Feb 26,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.stimulus(fast)
@@ -62,297 +62,299 @@
 # Loading work.S8_Box(fast)
 # Loading work.SF(fast)
 # Loading work.FP(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/straight File: des_stub.sv Line: 307
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(483).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox1 File: des_stub.sv Line: 298
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(561).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox2 File: des_stub.sv Line: 299
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(639).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox3 File: des_stub.sv Line: 300
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(717).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox4 File: des_stub.sv Line: 301
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(795).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox5 File: des_stub.sv Line: 302
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(873).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox6 File: des_stub.sv Line: 303
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(951).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox7 File: des_stub.sv Line: 304
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1029).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox8 File: des_stub.sv Line: 305
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(179).
-#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/straight File: des_stub.sv Line: 307
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r1/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r2/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r3/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r4/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r5/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r6/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r7/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r8/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r9/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r10/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r11/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r12/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r13/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r14/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r15/f/straight File: des_stub.sv Line: 381
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(557).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox1 File: des_stub.sv Line: 372
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(635).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox2 File: des_stub.sv Line: 373
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(713).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox3 File: des_stub.sv Line: 374
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(791).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox4 File: des_stub.sv Line: 375
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(869).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox5 File: des_stub.sv Line: 376
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(947).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox6 File: des_stub.sv Line: 377
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1025).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox7 File: des_stub.sv Line: 378
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (6) for port 'out_bits'. The port definition is at: des_stub.sv(1103).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/sbox8 File: des_stub.sv Line: 379
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (48) for port 'inp_block'. The port definition is at: des_stub.sv(253).
+#    Time: 0 ps  Iteration: 0  Instance: /stimulus/dut/r16/f/straight File: des_stub.sv Line: 381
 # .main_pane.wave.interior.cs.body.pw.wf
 #          8 tests completed with          8 errors
 # ** Note: $finish    : tb_des.sv(61)
 #    Time: 75 ns  Iteration: 1  Instance: /stimulus
 # 1
 # Break in Module stimulus at tb_des.sv line 61
+# End time: 13:53:19 on Feb 26,2024, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 144
