@@ -68,7 +68,6 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    PC2 key8(C8,D8,SubKey8);
 
 
-//Work here
 
 
    assign C9[27:0]= {C8[26:0],C8[27]};
@@ -1200,52 +1199,52 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
    // Initial Permutation (IP)
    IP b1 (plaintext, ip_out);
    // round 1
-   round r1 (ip_out, SubKey1, rout1);
+   round r1 (ip_out, SubKey1, rout16);
    
    // round 2
-   round r2 (rout1, SubKey2, rout2);
+   //round r2 (rout1, SubKey2, rout2);
    
    // round 3
-   round r3 (rout2, SubKey3, rout3);
+   //round r3 (rout2, SubKey3, rout3);
    
    // round 4
-   round r4 (rout3, SubKey4, rout4);
+   //round r4 (rout3, SubKey4, rout4);
    
    // round 5
-   round r5 (rout4, SubKey5, rout5);
+   //round r5 (rout4, SubKey5, rout5);
    
    // round 6
-   round r6 (rout5, SubKey6, rout6);
+   //round r6 (rout5, SubKey6, rout6);
    
    // round 7
-   round r7 (rout6, SubKey7, rout7);
+   //round r7 (rout6, SubKey7, rout7);
    
    // round 8
-   round r8 (rout7, SubKey8, rout8);
+   //round r8 (rout7, SubKey8, rout8);
    
    // round 9
-   round r9 (rout8, SubKey9, rout9);
+   //round r9 (rout8, SubKey9, rout9);
    
    // round 10
-   round r10 (rout9, SubKey10, rout10);
+   //round r10 (rout9, SubKey10, rout10);
    
    // round 11
-   round r11 (rout10, SubKey11, rout11);
+   //round r11 (rout10, SubKey11, rout11);
    
    // round 12
-   round r12 (rout11, SubKey12, rout12);
+   //round r12 (rout11, SubKey12, rout12);
    
    // round 13
-   round r13 (rout12, SubKey13, rout13);
+   //round r13 (rout12, SubKey13, rout13);
    
    // round 14
-   round r14 (rout13, SubKey14, rout14);
+   //round r14 (rout13, SubKey14, rout14);
    
    // round 15
-   round r15 (rout14, SubKey15, rout15);
+   //round r15 (rout14, SubKey15, rout15);
    
    // round 16
-   round r16 (rout15, SubKey16, rout16);
+   //round r16 (rout15, SubKey16, rout16);
 
    // Final Permutation (IP^{-1}) (swap output of round16)
    FP FP({rout16[31:0], rout16[63:32]}, ciphertext);
