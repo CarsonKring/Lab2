@@ -355,7 +355,7 @@ module feistel (inp_block, subkey, out_block);
    logic [47:0] expanded;
    logic [47:0] xored;
    logic [5:0] s1,s2,s3,s4,s5,s6,s7,s8;
-   logic [5:0] so1,so2,so3,so4,so5,so6,so7,so8;
+   logic [3:0] so1,so2,so3,so4,so5,so6,so7,so8;
 
    EF e(inp_block,expanded);
    assign xored = expanded ^ subkey;
@@ -1195,56 +1195,108 @@ module DES (input logic [63:0] key, input logic [63:0] plaintext,
 		    SubKey13, SubKey14, SubKey15, SubKey16);
    // encrypt (encrypt=1) or decrypt (encrypt=0) 
 
+   logic [47:0] S1;
+   logic [47:0] S2;
+   logic [47:0] S3;
+   logic [47:0] S4;
+   logic [47:0] S5;
+   logic [47:0] S6;
+   logic [47:0] S7;
+   logic [47:0] S8;
+   logic [47:0] S9;
+   logic [47:0] S10;
+   logic [47:0] S11;
+   logic [47:0] S12;
+   logic [47:0] S13;
+   logic [47:0] S14;
+   logic [47:0] S15;
+   logic [47:0] S16;
+
+   //encrypt ? assign S1 = SubKey1 : SubKey16;
+   //encrypt ? assign S2 = SubKey2 : SubKey15;
+   //encrypt ? assign S3 = SubKey3 : SubKey14;
+   //encrypt ? assign S4 = SubKey4 : SubKey13;
+   //encrypt ? assign S5 = SubKey5 : SubKey12;
+   //encrypt ? assign S6 = SubKey6 : SubKey11;
+   //encrypt ? assign S7 = SubKey7 : SubKey10;
+   //encrypt ? assign S8 = SubKey8 : SubKey9;
+   //encrypt ? assign S9 = SubKey9 : SubKey8;
+   //encrypt ? assign S10 = SubKey10 : SubKey7;
+   //encrypt ? assign S11 = SubKey11 : SubKey6;
+   //encrypt ? assign S12 = SubKey12 : SubKey5;
+   //encrypt ? assign S13 = SubKey13 : SubKey4;
+   //encrypt ? assign S14 = SubKey14 : SubKey3;
+   //encrypt ? assign S15 = SubKey15 : SubKey2;
+   //encrypt ? assign S16 = SubKey16 : SubKey1;
+
+   assign S1 = encrypt ? SubKey1 : SubKey16;
+   assign S2 = encrypt ? SubKey2 : SubKey15;
+   assign S3 = encrypt ? SubKey3 : SubKey14;
+   assign S4 = encrypt ? SubKey4 : SubKey13;
+   assign S5 = encrypt ? SubKey5 : SubKey12;
+   assign S6 = encrypt ? SubKey6 : SubKey11;
+   assign S7 = encrypt ? SubKey7 : SubKey10;
+   assign S8 = encrypt ? SubKey8 : SubKey9;
+   assign S9 = encrypt ? SubKey9 : SubKey8;
+   assign S10 = encrypt ? SubKey10 : SubKey7;
+   assign S11 = encrypt ? SubKey11 : SubKey6;
+   assign S12 = encrypt ? SubKey12 : SubKey5;
+   assign S13 = encrypt ? SubKey13 : SubKey4;
+   assign S14 = encrypt ? SubKey14 : SubKey3;
+   assign S15 = encrypt ? SubKey15 : SubKey2;
+   assign S16 = encrypt ? SubKey16 : SubKey1;
+
+
 	logic [63:0] rout1,rout2,rout3,rout4,rout5,rout6,rout7,rout8,rout9,rout10,rout11,rout12,rout13,rout14,rout15,rout16;
    // Initial Permutation (IP)
    IP b1 (plaintext, ip_out);
    // round 1
-   round r1 (ip_out, SubKey1, rout16);
+   round r1 (ip_out, S1, rout1);
    
    // round 2
-   //round r2 (rout1, SubKey2, rout2);
+   round r2 (rout1, S2, rout2);
    
    // round 3
-   //round r3 (rout2, SubKey3, rout3);
+   round r3 (rout2, S3, rout3);
    
    // round 4
-   //round r4 (rout3, SubKey4, rout4);
+   round r4 (rout3, S4, rout4);
    
    // round 5
-   //round r5 (rout4, SubKey5, rout5);
+   round r5 (rout4, S5, rout5);
    
    // round 6
-   //round r6 (rout5, SubKey6, rout6);
+   round r6 (rout5, S6, rout6);
    
    // round 7
-   //round r7 (rout6, SubKey7, rout7);
+   round r7 (rout6, S7, rout7);
    
    // round 8
-   //round r8 (rout7, SubKey8, rout8);
+   round r8 (rout7, S8, rout8);
    
    // round 9
-   //round r9 (rout8, SubKey9, rout9);
+   round r9 (rout8, S9, rout9);
    
    // round 10
-   //round r10 (rout9, SubKey10, rout10);
+   round r10 (rout9, S10, rout10);
    
    // round 11
-   //round r11 (rout10, SubKey11, rout11);
+   round r11 (rout10, S11, rout11);
    
    // round 12
-   //round r12 (rout11, SubKey12, rout12);
+   round r12 (rout11, S12, rout12);
    
    // round 13
-   //round r13 (rout12, SubKey13, rout13);
+   round r13 (rout12, S13, rout13);
    
    // round 14
-   //round r14 (rout13, SubKey14, rout14);
+   round r14 (rout13, S14, rout14);
    
    // round 15
-   //round r15 (rout14, SubKey15, rout15);
+   round r15 (rout14, S15, rout15);
    
    // round 16
-   //round r16 (rout15, SubKey16, rout16);
+   round r16 (rout15, S16, rout16);
 
    // Final Permutation (IP^{-1}) (swap output of round16)
    FP FP({rout16[31:0], rout16[63:32]}, ciphertext);
