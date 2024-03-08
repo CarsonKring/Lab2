@@ -1,81 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.1.1 (64-bit)
-# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
-# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
-# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Mon Mar  4 12:00:31 2024
-# Process ID: 2884
-# Current directory: C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20988 C:\Users\ckring\Documents\Github\Lab2\Lab2\Lab2\Vivado\Lab1\Lab1.xpr
-# Log file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/vivado.log
-# Journal file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1\vivado.jou
-# Running On: CEAT-ENDV350-01, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68426 MB
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar  8 11:40:35 2024
+# Process ID: 3508
+# Current directory: C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2200 C:\Users\ckring\Documents\Github\Lab2\Lab2\Vivado\Lab1\Lab1.xpr
+# Log file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/vivado.log
+# Journal file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.xpr
-upgrade_project -migrate_output_products
+open_project C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.xpr
 update_compile_order -fileset sources_1
-add_files -norecurse C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/SV/des_stub.sv
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-report_power -name {power_1}
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-current_design impl_1
-report_power -name {power_2}

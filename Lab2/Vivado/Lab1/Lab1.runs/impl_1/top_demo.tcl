@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.tcl"
+  variable script "C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -122,31 +124,17 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 4
+  set_param synth.incrementalSynthesisCache C:/Users/ckring/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12744-CEAT-ENDV350-12/incrSyn
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg484-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.xpr [current_project]
-  set_property ip_output_repo C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.cache/ip [current_project]
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.dcp
+  set_property webtalk.parent_dir C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.xpr [current_project]
+  set_property ip_output_repo C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/top_demo.dcp
-OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.srcs/constrs_1/new/constr.xdc
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top top_demo -part xc7z020clg484-1 
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
@@ -276,6 +264,9 @@ OPTRACE "route_design reports" START { REPORT }
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_demo_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_demo_clock_utilization_routed.rpt"
   create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file top_demo_bus_skew_routed.rpt -pb top_demo_bus_skew_routed.pb -rpx top_demo_bus_skew_routed.rpx"
+  create_report "impl_1_route_report_power_1" "report_power -file top_demo_power_routed_1.rpt -pb top_demo_power_summary_routed_1.pb -rpx top_demo_power_routed_1.rpx"
+  create_report "impl_1_route_report_timing_0" "report_timing -file route_report_timing_0.rpt -rpx route_report_timing_0.rpx"
+  create_report "impl_1_route_report_utilization_0" "report_utilization -file route_report_utilization_0.rpt -pb route_report_utilization_0.pb"
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_demo_routed.dcp
@@ -296,34 +287,4 @@ OPTRACE "route_design write_checkpoint" END { }
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
-OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
-OPTRACE "write_bitstream setup" START { }
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-OPTRACE "read constraints: write_bitstream" START { }
-OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi top_demo.mmi }
-OPTRACE "write_bitstream setup" END { }
-OPTRACE "write_bitstream" START { }
-  write_bitstream -force top_demo.bit 
-OPTRACE "write_bitstream" END { }
-OPTRACE "write_bitstream misc" START { }
-OPTRACE "read constraints: write_bitstream_post" START { }
-OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force top_demo}
-  catch {file copy -force top_demo.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "write_bitstream misc" END { }
-OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

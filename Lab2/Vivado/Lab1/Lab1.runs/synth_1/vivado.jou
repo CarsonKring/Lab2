@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Mon Mar  4 13:14:16 2024
-# Process ID: 35436
-# Current directory: C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1
+# Start of session at: Fri Mar  8 11:50:20 2024
+# Process ID: 13408
+# Current directory: C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1
 # Command line: vivado.exe -log top_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_demo.tcl
-# Log file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/top_demo.vds
-# Journal file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1\vivado.jou
-# Running On: CEAT-ENDV350-01, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68426 MB
+# Log file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/top_demo.vds
+# Journal file: C:/Users/ckring/Documents/Github/Lab2/Lab2/Vivado/Lab1/Lab1.runs/synth_1\vivado.jou
+# Running On: CEAT-ENDV350-12, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68431 MB
 #-----------------------------------------------------------
 source top_demo.tcl -notrace
